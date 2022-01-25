@@ -47,13 +47,17 @@ const findMax = (arr) => {
 // ------------------------
 const reverseArray = (arr) => {
     
-    var rev = [];
-    for (let y = 0; y < arr.length; y++) {
-        rev.unshift(arr[y]);
+    var start =0;
+    var end = a.length-1;
+    while(start<=end){
+    var temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
     }
-    return rev;
   
-
+return rev
 
     
 }
